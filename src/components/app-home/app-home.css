@@ -1,0 +1,14 @@
+.app-home {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+div.box {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 45vw;
+}

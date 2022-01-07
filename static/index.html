@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Stencil Starter App</title>
+    <meta name="Description" content="Welcome to the Stencil App Starter. You can use this starter to build entire apps all with web components using Stencil!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#16161d">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+
+    <link href="test.css" rel="stylesheet">
+</head>
+<body style="border: 1px solid #f00;">
+<app-root class="hydrated">
+    <style sty-id="sc-app-root">header {
+        background: #5851ff;
+        color: white;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26)
+    }
+
+    h1 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #fff;
+        padding: 0 12px
+    }</style>
+    <div>
+        <header><h1>Static App</h1></header>
+        <main>
+            <stencil-router class="hydrated"><!---->
+                <stencil-route-switch group="7445-6354-1131-4451" class="hydrated"><!---->
+                    <stencil-route group="7445-6354-1131-4451" class="hydrated">
+                        <app-home class="hydrated">
+                            <div class="app-home">
+                                <div class="box">Box 1 (width: 45vw)</div>
+                                <div class="box">Box 2 (width: 45vw)</div>
+                            </div>
+                        </app-home>
+                    </stencil-route>
+                    <stencil-route class="hydrated" group="7445-6354-1131-4451" style="display: none;"></stencil-route>
+                </stencil-route-switch>
+            </stencil-router>
+        </main>
+    </div>
+    <style sty-id="sc-stencil-route">stencil-route.inactive {
+        display: none
+    }
+    </style>
+    <style sty-id="sc-app-home">.app-home {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.box {
+        border: 1px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 45vw;
+    }
+    </style>
+</app-root>
+</body>
+</html>
